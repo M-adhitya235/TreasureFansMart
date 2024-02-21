@@ -19,6 +19,7 @@ const Login = () => {
         
         </div>
       </div>
+      <div style={{ height: "100px" }}></div>
       <Footer />
     </aside>
   );

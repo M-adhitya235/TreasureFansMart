@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 
 const RegisterForm = () => {
   return (
     <>
+    <Navbar />
     <div className="flex" style={{ marginTop: "20px" }}>
       <div className="hidden md:inline-block flex-1 bg-no-repeat bg-cover bg-[url('src/assets/buketuang.jpg')]"></div>
       <div className="flex-1 flex flex-col justify-center bg-white">

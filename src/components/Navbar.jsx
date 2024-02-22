@@ -1,70 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { FaSearch} from 'react-icons/fa';
 
-function Navbar({ navlinks }) {
-  const handleLogin = () => {
-    console.log("Login clicked");
-  };
-
-  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsNavbarFixed(true);
-    } else {
-      setIsNavbarFixed(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const navbarStyle = {
-    backgroundColor: isNavbarFixed ? "#FAF8F8" : "#FAF8F8", 
-    padding: "1.5rem",
-    position: isNavbarFixed ? "fixed" : "absolute",
-    width: "100%",
-    zIndex: 1000, 
-    boxShadow: isNavbarFixed ? "0px 2px 4px rgba(0, 0, 0, 0.1)" : "none", 
-    transition: "background-color 0.3s ease", 
-  };
-
+function Navbar() {
   return (
-    <nav style={navbarStyle} className="flex justify-between items-center">
-      {/* Logo
-      <div className="flex items-center space-x-2">
-        <img
-          src="src/assets/Rumap.idlogo.png" 
-          alt="Logo"
-          className="h-12 w-auto" 
-        />
-      </div> */}
-
-      <ul className="flex space-x-10 text-black ml-auto font-roboto font-semibold text-sm">
-        {navlinks.map((link) => (
-          <li key={link.title}>
-            <Link to={link.path}>{link.title}</Link>
-          </li>
-        ))}
+    <nav className="flex items-center justify-between bg-white p-4 border-b border-gray-300">
+      <div className="text-black text-2xl font-bold ml-14 mb-1">Treasure Fans Mart</div>
+      <ul className="flex space-x-8">
+        <li className="text-black mt-1"><Link to="/">Home</Link></li>
+        <li className="text-black mt-1"><Link to="/contact">Contact</Link></li>
+        <li className="text-black mt-1"><Link to="/about">About</Link></li>
+        <li className="text-black mt-1"><Link to="/register">Sign Up</Link></li>
+        <li className="text-black flex items-center">
+          <div className="relative">
+            <input type="text" placeholder="Search" className="border border-gray-300 px-2 py-1 rounded mr-2" />
+            <div className="absolute right-0 top-0 mt-2 mr-3 ml-6">
+              <FaSearch className="text-gray-400" />
+            </div>
+          </div>
+        </li>
       </ul>
-
-      <div className="ml-10">
-        <button
-          onClick={handleLogin}
-          className="text-white px-6 py-3 rounded-md transition-all text-sm font-roboto font-semibold"
-          style={{
-            backgroundColor: "#3F72AF",
-            borderRadius: "10px",
-          }}
-        >
-          Daftar/Masuk
-        </button>
-      </div>
     </nav>
   );
 }

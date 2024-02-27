@@ -1,5 +1,9 @@
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaTwitter, FaLinkedin, FaPinterest } from "react-icons/fa";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f3e9945 (tfm progress)
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8 px-4">

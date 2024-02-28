@@ -69,12 +69,9 @@ const LoginForm = () => {
             Sign In
           </Link>
         </p>
-      </div>
-      
+      </div>  
     </div>
   );
 };
-
-   
 
 export default LoginForm;

@@ -86,7 +86,7 @@ const RegisterForm = () => {
                 placeholder="Password"
               />
             </div>
-            <Link to="/">
+            <Link to="/login">
               <button
                 type="submit"
                 className="text-white bg-red-600 w-full text-center mt-10 place-content-center hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"

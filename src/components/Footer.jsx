@@ -1,36 +1,24 @@
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebook, FaTwitter, FaLinkedin, FaPinterest } from "react-icons/fa";
 
-<<<<<<< HEAD
-=======
-
->>>>>>> f3e9945 (tfm progress)
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8 px-4">
       <div className="mx-auto md:flex justify-between items-center">
-        {/* Logo
-        <div className="flex items-center">
+        {/* Logo*/}
+        <div className="flex flex-col items-center">
+        <div className="ml-8">
+        <h2 className="text-lg font-semibold">Treasure Fans Mart</h2>
+          </div>
           <img
-            src={Logo}
+            src="/src/assets/tfmmm.png"
             alt="Logo"
-            className="h-12 w-auto"
+            className="h-24 w-24 mt-2" 
           />
-        </div> */}
-
-        {/* Navigation */}
-        <hr className="border-t-2 md:border-t-0 my-4" />
-        <div className="flex flex-col gap-3">
-          <h2 className="font-bold text-lg">Support</h2>
         </div>
 
-        {/* Contacts dan Social Media */}
-        <hr className="border-t-2 md:border-t-0 my-4" />
-
+        {/* Contacts */}
         <div className="flex flex-col space-y-4">
-          {/* Contacts */}
-          <div>
-            <h2 className="text-lg font-semibold">Contacts</h2>
-          </div>
+          <h2 className="text-lg font-semibold">Contacts</h2>
 
           {/* Address */}
           <div className="flex items-center mb-2">
@@ -51,11 +39,21 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="border-t-2 md:border-t-0 my-4" />
+        {/* Navigation */}
+        <div className="flex flex-col gap-3">
+          <h2 className="font-bold text-lg">Account</h2>
+          <ul className="flex flex-col gap-2">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Login / Register</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
 
         {/* Social Media */}
         <div className="flex flex-col space-y-2">
-          <h2 className="text-lg font-semibold mb-2 text-center">Social Media</h2>
+          <h2 className="text-lg font-semibold items-center mb-2 mr-8 text-center">Social Media</h2>
           <div className="flex items-center justify-center">
             <FaFacebook className="inline-block mr-2" />
             <FaTwitter className="inline-block mr-2" />

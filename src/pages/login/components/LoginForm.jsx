@@ -1,18 +1,10 @@
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-=======
-import Navbar from "../../../components/Navbar"; 
->>>>>>> f3e9945 (tfm progress)
 
 
 const LoginForm = () => {
   return (
     <div className="block w-10/12 p-16 bg-gray-100 mx-auto border shadow-xl border-gray-200 rounded-lg shadow">
-<<<<<<< HEAD
-      <h1 className="font-bold text-center text-3xl lg:text-5xl text-black mb-8">
-=======
       <h1 className="font-bold text-center text-4xl lg:text-6xl text-black mb-8">
->>>>>>> f3e9945 (tfm progress)
         Login
       </h1>
       <form>
@@ -73,13 +65,8 @@ const LoginForm = () => {
       <div className="flex justify-center ">
         <p className="mt-2 text-center space-x-2.5">
           Belum Daftar ?
-<<<<<<< HEAD
-          <Link to="/register" className="ml-2 italic hover:text-red-200">
-            Sign Up
-=======
           <Link to="/register" className="ml-2 italic hover:text-blue-400">
             Sign In
->>>>>>> f3e9945 (tfm progress)
           </Link>
         </p>
       </div>

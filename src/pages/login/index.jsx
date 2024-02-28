@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import LoginForm from "./components/LoginForm";
-import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -20,9 +20,10 @@ const Login = () => {
           <LoginForm onLoginSuccess={handleLoginSuccess} />
         
         </div>
+
       </div>
       <div style={{ height: "100px" }}></div>
-      <Footer />
+      <Footer/>
     </aside>
   );
 };

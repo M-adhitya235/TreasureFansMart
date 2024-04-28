@@ -1,0 +1,123 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Adit",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+//get all user
+GET http://localhost:5000/users
+
+###
+//get user by id
+GET http://localhost:5000/users/b51bfe76-3d2f-409f-8f68-57cdebaf24b3
+
+###
+//get user by role
+GET http://localhost:5000/users/role/user
+
+###
+//update a user
+PATCH http://localhost:5000/users/bdab6336-f6dc-4aab-9765-35554c08164f
+Content-Type: application/json
+
+{
+    "name": "Adit",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+//delete a user
+DELETE http://localhost:5000/users/626b29cc-debf-47a6-91c2-9441baffa77a
+
+###
+//login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+//check login
+GET http://localhost:5000/me
+
+###
+//check login admin
+GET http://localhost:5000/meadmin
+
+###
+DELETE http://localhost:5000/logout
+
+###
+// Get All Products
+GET http://localhost:5000/products
+
+###
+// Get Single Products
+GET http://localhost:5000/products/14cf5db0-542c-4b38-a23c-ac617d17300b
+
+###
+// POST Data Product
+POST http://localhost:5000/products/
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "price": 100000
+}
+
+###
+// Update Data Product
+PATCH  http://localhost:5000/products/04ad8a9a-418d-45f0-8f14-15183c656933
+Content-Type: application/json
+
+{
+    "name": "Product 6 updated",
+    "price": 1000
+}
+
+###
+DELETE  http://localhost:5000/products/89a5344e-db41-42f4-b893-a06567b68ef7
+
+####
+// GET all carts
+GET http://localhost:5000/carts
+
+###
+// GET a cart by ID
+GET http://localhost:5000/carts/6e40dfb6-ac7f-42f3-8a1a-1299031cd8fd
+Content-Type: application/json
+
+###
+// POST create a cart
+POST http://localhost:5000/carts
+Content-Type: application/json
+
+{
+  "productId": "1",
+  "quantity": 1
+}
+
+###
+// PUT update a cart
+PATCH http://localhost:5000/carts/08a54657-00ba-4bf5-988e-50f50100784f
+Content-Type: application/json
+
+{
+  "quantity": 3
+}
+
+###
+// DELETE a cart
+DELETE http://localhost:5000/carts/6e40dfb6-ac7f-42f3-8a1a-1299031cd8fd
